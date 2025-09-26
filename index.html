@@ -5,17 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homely</title>
 
+    <script type="text/javascript">
+        // TODO required for ktor client
+        window.process = {
+            env: {},
+            release: {}
+        };
+    </script>
+
     <!-- Ensure relative paths resolve correctly on GitHub Pages -->
-    <base href="/homely-app-canary/">
+    <!--    <base href="/homely-app-canary/">-->
 
     <!-- Styles & favicon -->
-    <link type="text/css" rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" sizes="360x360" href="ic_homely.svg">
-
-    <!-- JS loader with cache busting -->
-    <script type="application/javascript" src="composeApp.js?v=1.0.0"></script>
+    <link type="text/css" rel="stylesheet" href="styles.css">    <link rel="icon" type="image/x-icon" sizes="360x360" href="ic_homely.svg">
 </head>
 <body>
 <div id="ComposeApp"></div>
+<!-- JS loader with cache busting -->
+<script type="application/javascript" src="composeApp.js?v=1.0.1"></script>
+<!-- Service worker registration -->
+<script type="application/javascript">
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () =>
+            navigator.serviceWorker.register("./service-worker.js")
+        );
+    }
+</script>
 </body>
 </html>
