@@ -1,0 +1,13 @@
+{
+  "name": "Homely",
+  "icons": [
+    {
+      "src": "./images/ic_homely_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#377966"
+}

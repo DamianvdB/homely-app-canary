@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512" height="512" viewBox="0 0 512 620" xmlns="http://www.w3.org/2000/svg">
+    <path d="M256 84 L112 196 V428 H208 V300 H304 V428 H400 V196 Z" fill="none" stroke="#FFFFFF"
+        stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- App title -->
+    <text x="256" y="560" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="112" fill="#FFFFFF">Homely
+    </text>
+</svg>
